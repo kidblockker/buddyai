@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="bubble_radius">16dp</dimen>
-    <dimen name="message_padding">12dp</dimen>
-    <dimen name="message_margin">8dp</dimen>
-    <dimen name="waveform_height">100dp</dimen>
-    <dimen name="icon_size">48dp</dimen>
-    <dimen name="btn_size">56dp</dimen>
-</resources>
