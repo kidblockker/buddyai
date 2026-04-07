@@ -19,7 +19,7 @@ jobs:
           java-version: '17'
 
       - name: Make gradlew executable
-        run: chmod +x gradlew
+        run: cd BuddyApp/BuddyApp && chmod +x gradlew
 
       - name: Build APK
         run: cd BuddyApp/BuddyApp && chmod +x gradlew && ./gradlew assembleDebug
@@ -28,4 +28,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: apk
-          path: app/build/outputs/apk/debug/*.apk
+          path: BuddyApp/BuddyApp/app/build/outputs/apk/debug/
