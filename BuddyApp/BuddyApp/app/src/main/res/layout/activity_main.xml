@@ -195,7 +195,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="@string/hint_input"
-            android:hintTextColor="@color/text_hint"
+            android:textColorHint="@color/text_hint"
             android:textColor="@color/text_primary"
             android:background="@drawable/bg_input_field"
             android:paddingHorizontal="16dp"
