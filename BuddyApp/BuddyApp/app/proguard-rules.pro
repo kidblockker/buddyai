@@ -1,0 +1,6 @@
+-keep class com.buddy.app.** { *; }
+-keep class okhttp3.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn okhttp3.**
+-dontwarn org.json.**

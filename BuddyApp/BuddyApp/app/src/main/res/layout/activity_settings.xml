@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/accent_blue"
+                android:contentDescription="Back"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SETTINGS"
+                android:textSize="16sp"
+                android:textColor="@color/accent_blue"
+                android:letterSpacing="0.4"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <!-- Section: Brain -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BRAIN"
+            android:textSize="11sp"
+            android:textColor="@color/accent_blue"
+            android:letterSpacing="0.4"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anthropic API Key"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etApiKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="sk-ant-..."
+            android:hintTextColor="@color/text_hint"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get your key at console.anthropic.com"
+            android:textSize="11sp"
+            android:textColor="@color/text_hint"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Section: Who you are -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WHO YOU ARE"
+            android:textSize="11sp"
+            android:textColor="@color/accent_blue"
+            android:letterSpacing="0.4"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What should Buddy call you?"
+            android:hintTextColor="@color/text_hint"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:inputType="textPersonName|textCapWords"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etUserAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your age"
+            android:hintTextColor="@color/text_hint"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Occupation"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etUserOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What do you do?"
+            android:hintTextColor="@color/text_hint"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/etUserCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Where are you based?"
+            android:hintTextColor="@color/text_hint"
+            android:textColor="@color/text_primary"
+            android:background="@drawable/bg_input_field"
+            android:padding="14dp"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="SAVE SETTINGS"
+            android:textSize="14sp"
+            android:letterSpacing="0.2"
+            android:textColor="@color/bg_primary"
+            android:backgroundTint="@color/accent_blue"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All data is stored locally on your device. Nothing is sent to any server except your messages to the Anthropic API for AI processing."
+            android:textSize="11sp"
+            android:textColor="@color/text_hint"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
