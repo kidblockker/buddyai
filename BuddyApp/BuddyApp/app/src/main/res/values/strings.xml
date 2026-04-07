@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Buddy</string>
+    <string name="status_idle">Say \'Hey Buddy\' or tap mic</string>
+    <string name="status_listening">Listening…</string>
+    <string name="status_thinking">Thinking…</string>
+    <string name="status_speaking">Speaking…</string>
+    <string name="hint_input">Type a message…</string>
+    <string name="settings_api_key">Anthropic API Key</string>
+    <string name="settings_your_name">Your Name (helps Buddy know you)</string>
+    <string name="settings_age">Your Age</string>
+    <string name="settings_occupation">Your Occupation</string>
+    <string name="settings_city">Your City</string>
+</resources>
